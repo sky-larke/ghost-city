@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CanDie : MonoBehaviour
@@ -14,7 +12,7 @@ public class CanDie : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (myAttackable.GetHealth() < 0)
+        if (myAttackable.Health < 0)
         {
             Destroy(this.gameObject);
         }
