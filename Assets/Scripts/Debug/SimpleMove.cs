@@ -9,19 +9,19 @@ public class SimpleMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.LeftArrow))
+        if(Input.GetKey(KeyCode.A))
         {
             this.transform.position += Vector3.left * moveSpeed * Time.deltaTime;
         }
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D))
         {
             this.transform.position += Vector3.right * moveSpeed * Time.deltaTime;
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.W))
         {
             this.transform.position += Vector3.up * moveSpeed * Time.deltaTime;
         }
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.S))
         {
             this.transform.position += Vector3.down * moveSpeed * Time.deltaTime;
         }
