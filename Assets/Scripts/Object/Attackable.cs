@@ -1,30 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+public enum Faction {PLAYER, ENEMY, NEUTRAL, DEFAULT};
 
 public class Attackable : MonoBehaviour
 {
-    public float health;
+    public float Health { get { return health; } }
+    public Faction MyFaction { get { return myFaction; } }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] protected Faction myFaction;
+    [SerializeField] private float health;
 
     public void ChangeHealth(float change)
     {
         health += change;
     }
 
-    public float GetHealth()
+    public void SetHealth(float toSet)
     {
-        return health;
+        health = toSet;
     }
+
 }
