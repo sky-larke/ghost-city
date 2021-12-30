@@ -9,8 +9,6 @@ public class InteractableItem : MonoBehaviour
 {
     GameObject prompt;
 
-    bool inInventory;
-
     void Start()
     {
         prompt = transform.GetChild(0).gameObject;
