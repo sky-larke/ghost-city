@@ -23,9 +23,9 @@ public class PlayerHealth : MonoBehaviour
 
         //Going to change depending on what hurts the game object
 
-        if (Input.GetKeyDown(KeyCode.G))
+        if (Input.GetKeyDown(KeyCode.P))
         {
-            TakeDamage(20);
+            TakeDamage(1);
         }
     }
 
